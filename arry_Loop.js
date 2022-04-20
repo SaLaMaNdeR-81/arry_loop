@@ -1,4 +1,4 @@
-arry=[
+const arry=[
     "arry one",
     "arry two",
     "arry three",
@@ -11,18 +11,30 @@ arry=[
 
 
 
-for (let i = 0; i <= arry.length + 1; i++) {
-    
-    if(i == arry.length ){i = -1; continue;}
-    
-    
-    setTimeout(()=>{
-
-        console.log(arry[i]);
-        
-    },i*2000)
-    
-    
 
 
-}
+
+
+
+
+let limit = 0
+
+function arryloop() {
+
+
+    console.log(arry[limit]);
+
+    limit++;
+
+    if(limit == arry.length){limit = 0}
+
+
+    setTimeout(arryloop, 1000)
+  }
+  
+  arryloop();
+
+
+
+
+  
