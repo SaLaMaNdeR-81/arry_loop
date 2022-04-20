@@ -11,9 +11,9 @@ arry=[
 
 
 
-for (let i = 0; i <= arry.length+1; i++) {
+for (let i = 0; i <= arry.length + 1; i++) {
     
-    if(i == arry.length ){i = -1;}
+    if(i == arry.length ){i = -1; continue;}
     
     
     setTimeout(()=>{
